@@ -96,7 +96,7 @@ const DatasetOverview: React.FC<DatasetOverviewProps> = ({ dataset }) => {
   });
 
   // Color schemes
-  const colors = ['#8884d8', '#82ca9d', '#ffc658', '#ff7300', '#8dd1e1', '#d084d0'];
+  // const colors = ['#8884d8', '#82ca9d', '#ffc658', '#ff7300', '#8dd1e1', '#d084d0'];
   const pieColors = ['#8884d8', '#82ca9d', '#ffc658', '#ff7300'];
 
   return (

@@ -90,7 +90,6 @@ export class LongitudinalTWADataGenerator {
   }
 
   private calculateHealthyAgingProfile(behaviors: any, outcomes: any): number {
-    let score = 0;
 
     // Behavioral components (40% weight)
     const behavioralScore = (

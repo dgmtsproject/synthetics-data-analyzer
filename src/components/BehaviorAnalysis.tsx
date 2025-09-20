@@ -1,6 +1,6 @@
 import React from 'react';
 import { MonthlyRecord } from '../types';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ScatterChart, Scatter, LineChart, Line, PieChart, Pie, Cell } from 'recharts';
+import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, PieChart, Pie, Cell } from 'recharts';
 import { Activity, Moon, Droplets, Apple, Brain, Users, TreePine, Music, Target } from 'lucide-react';
 
 interface BehaviorAnalysisProps {
@@ -89,12 +89,12 @@ const BehaviorAnalysis: React.FC<BehaviorAnalysisProps> = ({ dataset }) => {
     };
   });
 
-  // Behavior correlations
-  const correlationData = [
-    { behavior: 'Exercise', sleep: doMoreStats.motion.avg, diet: doMoreStats.diet.avg, meditation: doMoreStats.meditation.avg / 10 },
-    { behavior: 'Sleep Quality', sleep: doMoreStats.sleep.avg_quality, diet: doMoreStats.diet.avg, meditation: doMoreStats.meditation.avg / 10 },
-    { behavior: 'Diet Quality', sleep: doMoreStats.sleep.avg_quality, diet: doMoreStats.diet.avg, meditation: doMoreStats.meditation.avg / 10 }
-  ];
+  // Behavior correlations - commented out for now
+  // const correlationData = [
+  //   { behavior: 'Exercise', sleep: doMoreStats.motion.avg, diet: doMoreStats.diet.avg, meditation: doMoreStats.meditation.avg / 10 },
+  //   { behavior: 'Sleep Quality', sleep: doMoreStats.sleep.avg_quality, diet: doMoreStats.diet.avg, meditation: doMoreStats.meditation.avg / 10 },
+  //   { behavior: 'Diet Quality', sleep: doMoreStats.sleep.avg_quality, diet: doMoreStats.diet.avg, meditation: doMoreStats.meditation.avg / 10 }
+  // ];
 
   // Smoking distribution
   const smokingData = [
@@ -103,7 +103,7 @@ const BehaviorAnalysis: React.FC<BehaviorAnalysisProps> = ({ dataset }) => {
     { status: 'Current', count: doLessStats.smoking.current, color: '#ff7300' }
   ];
 
-  const colors = ['#8884d8', '#82ca9d', '#ffc658', '#ff7300', '#8dd1e1'];
+  // const colors = ['#8884d8', '#82ca9d', '#ffc658', '#ff7300', '#8dd1e1'];
 
   return (
     <div className="behavior-analysis">

@@ -287,7 +287,7 @@ export class ResearchValidatedTWAGenerator {
       'Some College': [0.70, 0.20, 0.10],
       'Bachelor+': [0.80, 0.15, 0.05]
     };
-    const educationEffect = educationEffectMap[demoFactors.education] || [0.65, 0.25, 0.10];
+    // const educationEffect = educationEffectMap[demoFactors.education] || [0.65, 0.25, 0.10];
     
     // Income effect (higher income = less smoking)
     if (demoFactors.income > 75000) {

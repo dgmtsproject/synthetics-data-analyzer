@@ -1,6 +1,6 @@
 import React from 'react';
 import { MonthlyRecord } from '../types';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, ScatterChart, Scatter, PieChart, Pie, Cell } from 'recharts';
+import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, PieChart, Pie, Cell } from 'recharts';
 import { Heart, Brain, Activity, TrendingUp, AlertTriangle, CheckCircle } from 'lucide-react';
 
 interface OutcomeAnalysisProps {
@@ -158,7 +158,7 @@ const OutcomeAnalysis: React.FC<OutcomeAnalysisProps> = ({ dataset }) => {
     { status: 'Poor', count: dataset.filter(r => r.healthy_aging_profile < 40).length / dataset.length * 100, color: '#d084d0' }
   ];
 
-  const colors = ['#8884d8', '#82ca9d', '#ffc658', '#ff7300', '#8dd1e1'];
+  // const colors = ['#8884d8', '#82ca9d', '#ffc658', '#ff7300', '#8dd1e1'];
 
   return (
     <div className="outcome-analysis">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ValidationResults as ValidationResultsType } from '../types';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { CheckCircle, XCircle, AlertTriangle, TrendingUp } from 'lucide-react';
 
 interface ValidationResultsProps {
@@ -99,16 +99,16 @@ const ValidationResults: React.FC<ValidationResultsProps> = ({ results }) => {
     }
   };
 
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case 'Pass':
-        return '#82ca9d';
-      case 'Fail':
-        return '#ff7300';
-      default:
-        return '#ffc658';
-    }
-  };
+  // const getStatusColor = (status: string) => {
+  //   switch (status) {
+  //     case 'Pass':
+  //       return '#82ca9d';
+  //     case 'Fail':
+  //       return '#ff7300';
+  //     default:
+  //       return '#ffc658';
+  //   }
+  // };
 
   return (
     <div className="validation-results">
