@@ -280,13 +280,13 @@ export class ResearchValidatedTWAGenerator {
     // Base probabilities
     let probabilities = [0.65, 0.25, 0.10];
     
-    // Education effect (higher education = less smoking)
-    const educationEffectMap: Record<string, number[]> = {
-      'Less than HS': [0.45, 0.30, 0.25],
-      'High School': [0.60, 0.25, 0.15],
-      'Some College': [0.70, 0.20, 0.10],
-      'Bachelor+': [0.80, 0.15, 0.05]
-    };
+    // Education effect (higher education = less smoking) - commented out for now
+    // const educationEffectMap: Record<string, number[]> = {
+    //   'Less than HS': [0.45, 0.30, 0.25],
+    //   'High School': [0.60, 0.25, 0.15],
+    //   'Some College': [0.70, 0.20, 0.10],
+    //   'Bachelor+': [0.80, 0.15, 0.05]
+    // };
     // const educationEffect = educationEffectMap[demoFactors.education] || [0.65, 0.25, 0.10];
     
     // Income effect (higher income = less smoking)

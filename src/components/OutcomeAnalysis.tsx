@@ -1,6 +1,6 @@
 import React from 'react';
 import { MonthlyRecord } from '../types';
-import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, PieChart, Pie, Cell } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, PieChart, Pie, Cell } from 'recharts';
 import { Heart, Brain, Activity, TrendingUp, AlertTriangle, CheckCircle } from 'lucide-react';
 
 interface OutcomeAnalysisProps {
